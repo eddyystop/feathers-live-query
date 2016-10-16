@@ -1,0 +1,15 @@
+<html>
+<head>
+  <title>Feathers live query</title>
+</head>
+<body>
+  <br />
+  <br />
+  <pre>// Client code for a live-query
+const messages.find({ query: { ... }})
+  .subscribe(messages => { makeDomList(messages); });</pre>
+  <ul id="list"></ul>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="./dist/bundle.js"></script>
+</body>
+</html>
